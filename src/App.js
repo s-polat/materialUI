@@ -5,9 +5,9 @@ import { styled } from '@mui/material/styles';
 
 
 function App() {
-  const StyledButton = styled(Button)({
-    backgroundColor: "red",
-  });
+  const StyledButton = styled(Button)(({theme})=>({
+    backgroundColor: theme.palette.otherColor.main
+  }));
   return (
     <div>
       <h1>Hello World</h1>
@@ -22,6 +22,10 @@ function App() {
         Disable elevation
       </Button>
       <Typography variant="h3" component="p">Hello World</Typography>
+
+      <Button variant="contained" color="otherColor">Customized</Button>
+
+     
 
     </div>
   );
