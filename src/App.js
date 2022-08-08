@@ -1,33 +1,25 @@
 import { Person } from "@mui/icons-material";
-import { Button, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { styled } from '@mui/material/styles';
+import Feed from "./components/Feed";
+import Navbar from "./components/Navbar";
+import Ridebar from "./components/Ridebar";
+import Sidebar from "./components/Sidebar";
 
 
 
 function App() {
-  const StyledButton = styled(Button)(({theme})=>({
-    backgroundColor: theme.palette.otherColor.main
-  }));
+ 
   return (
-    <div>
-      <h1>Hello World</h1>
-      <Button></Button>
-      <Button variant="text" style={{backgroundColor:"white", color:"purple"}}>Text</Button> {/* //burda kendi style imizi inline olarak verdik */}
-      <Button variant="contained" sx={{backgroundColor:"purple", color:"white"}}>Text</Button> {/* //burdada kendi style imizi inline "sx" olarak verdik */}
-      <StyledButton variant="contained">Siddik</StyledButton>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined" >Outlined</Button>
-      <Button startIcon={<Person/>} variant="contained" color="success" >Outlined</Button>
-      <Button variant="contained" disableElevation>
-        Disable elevation
-      </Button>
-      <Typography variant="h3" component="p">Hello World</Typography>
-
-      <Button variant="contained" color="otherColor">Customized</Button>
-
-     
-
-    </div>
+    <Box>
+      <Navbar />
+      <Stack direction="row" spacing={3} justifyContent="space-between" >
+        <Sidebar/>
+        <Feed/>
+        <Ridebar/>
+        
+      </Stack>
+    </Box>
   );
 }
 
