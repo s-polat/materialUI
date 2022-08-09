@@ -35,7 +35,7 @@ const UserBox = styled(Box)(({theme}) => ({
 function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <AppBar position="stick">
+    <AppBar position="sticky">
       <StyledToolbar>
        <Typography variant='h6' sx={{display:{xs:"none", sm:"block"}}}>Facebook</Typography>
        <Pets sx={{display:{xs:"block", sm:"none"}}} />

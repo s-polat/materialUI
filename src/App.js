@@ -1,6 +1,7 @@
 import { Person } from "@mui/icons-material";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { styled } from '@mui/material/styles';
+import Add from "./components/Add";
 import Feed from "./components/Feed";
 import Navbar from "./components/Navbar";
 import Ridebar from "./components/Ridebar";
@@ -9,6 +10,7 @@ import Sidebar from "./components/Sidebar";
 
 
 function App() {
+  
  
   return (
     <Box>
@@ -19,6 +21,7 @@ function App() {
         <Ridebar/>
         
       </Stack>
+      <Add/>
     </Box>
   );
 }
