@@ -18,14 +18,13 @@ function Post() {
             <MoreVert />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
+        title="Brithday"
         subheader="September 14, 2016"
       />
       <CardMedia
+      sx={{height:"450px" }}
         component="img"
-        height="20%"
-        image="https://cdn.yemek.com/mncrop/620/388/uploads/2018/08/semizotlu-fellah-koftesi-yemekcom.jpg
-        "
+        image="https://i.pinimg.com/originals/9a/0f/81/9a0f8104533ad131bf12cd2f45e22d18.jpg"
         alt="Paella dish"
       />
       <CardContent>
